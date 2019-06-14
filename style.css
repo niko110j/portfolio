@@ -364,7 +364,7 @@ img {
     #content .projects {
         display: flex;
         width: 90vw;
-        height: 500vw;
+        height: 50vw;
         justify-content: center;
         align-items: center;
         background-image: url(img/niceespanastuff%20036.JPG);
