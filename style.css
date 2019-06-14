@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/**** HEADER ****/
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    z-index: 100;
+    color: black;
+    border-bottom: 6px solid #af464b;
+}
+
+header img {
+    position: absolute;
+    top: 10px;
+    width: 120px;
+    height: 60px;
+    margin-left: 5%;
+}
+
+/** NAV **/
+.hidden {
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 1;
+    top: 25%;
+}
+
+#menu {
+    padding: 0;
+    list-style-type: none;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    margin: 0;
+    background-color: white;
+}
+
+header li {
+    width: 100vw;
+    background-color: #ffffff;
+    text-align: right;
+    margin: 0;
+
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 100px;
+}
+
+header li a:hover {
+    color: #af464b;
+}
+
+.selected {
+    color: #af464b;
+}
+
+/**INDEX SPLASH**/
+
+#splash {
+    width: 375px;
+    height: 1300px;
+    background-image: url(img/Artboard%20%E2%80%93%201.jpg);
+    background-size: contain;
+}
+
+#splash img {
+    width: 375px;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/**WEB**/
+
+#web {
+    background-color: #EFC376;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.projects img {
+    width: 55%;
+}
+
+#web .projects {
+    display: flex;
+    width: 95vw;
+    height: 190vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/edi12.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+
+.projekt1,
+.projekt2 {
+    flex-basis: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+
+
+}
+
+.projekt2 {
+    padding-bottom: 5%;
+}
+
+.title {
+    margin-top: 40%;
+}
+
+.title2 {
+    width: 50%;
+    margin-top: 10%;
+}
+
+#web .skills {
+    display: flex;
+    width: 95vw;
+    height: 50vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/turkeylurkey%20375.JPG);
+    background-size: cover;
+    flex-basis: 750px;
+    margin-top: 5%;
+
+}
+
+/**ANIMATION***/
+
+
+#animation {
+    background-color: #EF9A76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+
+#animation .projects {
+    display: flex;
+    width: 90vw;
+    height: 200vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/p7.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.projekt1,
+.projekt2 {
+    flex-basis: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+
+
+}
+
+.projekt2 {
+    padding-bottom: 5%;
+}
+
+.title {
+    margin-top: 40%;
+}
+
+.title2 {
+    width: 50%;
+    margin-top: 10%;
+}
+
+#animation .skills {
+    display: flex;
+    width: 90vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/spain%20n%20maroc%20589.JPG);
+    background-size: cover;
+    flex-basis: 750px;
+    margin-top: 5%;
+}
+
+/**CONTENT**/
+
+#content {
+    background-color: #9DB5D4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+#content .projects {
+    display: flex;
+    width: 90vw;
+    height: 200vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/niceespanastuff%20036.JPG);
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+
+/**MEDIA QUERY**/
+
+@media only screen and (min-width: 750px) {
+    header {
+        position: sticky;
+        background-color: #ffffff;
+    }
+
+    header li a {
+        padding: 0;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        padding-right: %;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+        padding-left: 70px;
+    }
+
+    #menu {
+
+        top: 30%;
+        right: 20%;
+
+
+    }
+
+    /**SPLASH**/
+
+    #splash {
+        background-image: url(img/Artboard%20%E2%80%93%202.jpg);
+        width: 100vw;
+        height: 50vw;
+        background-size: cover;
+
+    }
+
+    /**WEB**/
+
+    #web {
+        background-color: #EFC376;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .projekt1,
+    .projekt2 {
+        padding: 1%;
+        margin: 0;
+        display: flex;
+        flex-basis: 550px;
+
+    }
+
+    .projects img {
+        width: 60%;
+    }
+
+    #web .projects {
+        display: flex;
+        width: 90vw;
+        height: 50vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/edi12.jpg);
+
+
+    }
+
+    .title {
+        margin-top: 10%;
+    }
+
+    .title2 {
+        width: 40%;
+        margin-top: 10%;
+
+    }
+
+    /**ANIMATION**/
+
+    #animation .projects {
+        display: flex;
+        width: 90vw;
+        height: 50vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/p7.jpg);
+        background-size: cover;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+
+    /**CONTENT**/
+    #content .projects {
+        display: flex;
+        width: 90vw;
+        height: 500vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/niceespanastuff%20036.JPG);
+        background-size: cover;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+
+
+}
