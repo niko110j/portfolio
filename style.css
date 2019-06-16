@@ -162,7 +162,6 @@ img {
     background-size: cover;
     flex-basis: 750px;
     margin-top: 5%;
-
 }
 
 /**ANIMATION***/
@@ -249,6 +248,56 @@ img {
     background-size: cover;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 5%;
+}
+
+#content .skills {
+    display: flex;
+    width: 90vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/woohoo%20070.JPG);
+    background-size: cover;
+    flex-basis: 750px;
+    margin-top: 5%;
+}
+
+/**UX**/
+
+#ux {
+
+    background-color: #c8abd3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+#ux .projects {
+    display: flex;
+    width: 90vw;
+    height: 200vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/ux.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#ux .skills {
+    display: flex;
+    width: 90vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/phot2.png);
+    background-size: cover;
+    flex-basis: 750px;
     margin-top: 5%;
 }
 
@@ -345,6 +394,28 @@ img {
 
     }
 
+    #web .skills {
+        width: 90vw;
+        height: 25vw;
+    }
+
+
+
+    #web .list1 {
+        background-color: antiquewhite;
+        width: 60vw;
+        height: 20vw;
+        opacity: 0.8;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        line-height: 2.4;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
     /**ANIMATION**/
 
     #animation .projects {
@@ -360,6 +431,21 @@ img {
         margin-top: 5%;
     }
 
+    #animation .list1 {
+        background-color: antiquewhite;
+        width: 20vw;
+        height: 20vw;
+        opacity: 0.8;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        line-height: 2.4;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
     /**CONTENT**/
     #content .projects {
         display: flex;
@@ -372,6 +458,51 @@ img {
         flex-wrap: wrap;
         flex-direction: row;
         margin-top: 5%;
+    }
+
+    #content .list1 {
+        background-color: antiquewhite;
+        width: 60vw;
+        height: 20vw;
+        opacity: 0.8;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        line-height: 2.4;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    /**UX**/
+
+    #ux .projects {
+        display: flex;
+        width: 90vw;
+        height: 50vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/ux.jpg);
+        background-size: cover;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+
+    #ux .list1 {
+        background-color: antiquewhite;
+        width: 60vw;
+        height: 20vw;
+        opacity: 0.8;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        line-height: 2.4;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
     }
 
 
