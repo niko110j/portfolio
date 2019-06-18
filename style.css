@@ -13,7 +13,7 @@ header {
     flex-direction: row;
     background-color: #ffffff;
     width: 100vw;
-    height: 17vw;
+    height: 80px;
     z-index: 100;
     color: black;
     top: 0;
@@ -24,7 +24,7 @@ header img {
     position: fixed;
     width: 120px;
     height: 60px;
-    margin-left: 5%;
+    margin-left: 4%;
     top: 0;
 }
 
@@ -56,13 +56,13 @@ header img {
 
 header li {
     width: 100vw;
-    height: 36vw;
+    height: 15vw;
     background-color: #ffffff;
     text-align: right;
     margin: 0;
     padding-right: 0;
     padding-top: 2%;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
 }
 
 header li a {
@@ -117,6 +117,7 @@ img {
 
 .projects img {
     width: 55%;
+    border: 5px solid black;
 }
 
 #web .projects {
@@ -150,17 +151,19 @@ img {
 
 .title {
     margin-top: 40%;
+    width: 50%;
+    padding-top: 10%
 }
 
 .title2 {
     width: 50%;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 #web .skills {
     display: flex;
     width: 95vw;
-    height: 50vw;
+    height: 80vw;
     justify-content: center;
     align-items: center;
     background-image: url(img/turkeylurkey%20375.JPG);
@@ -173,18 +176,43 @@ img {
 .list1 {
     background-color: antiquewhite;
     width: 80vw;
-    height: 80vw;
+    height: 70vw;
     opacity: 0.8;
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     text-align: center;
-    text-decoration: none;
     line-height: 2.4;
     padding-bottom: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
     padding-top: 10%;
 
+}
+
+.list1 li {
+    list-style: none;
+}
+
+.links {
+    background-color: antiquewhite;
+    width: 75vw;
+    height: 65vw;
+    opacity: 0.8;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.4;
+    padding-top: 7%;
+    margin-top: 15%;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
+    border-radius: 50vw;
+
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
 }
 
 /**ANIMATION***/
@@ -230,7 +258,7 @@ img {
 }
 
 .title {
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .title2 {
@@ -369,6 +397,10 @@ img {
     padding-right: 5%;
 }
 
+.des {
+    padding-bottom: 15%;
+}
+
 
 .first {
     width: 70vw;
@@ -426,11 +458,84 @@ img {
 
 }
 
+/**** FOOTER ****/
+footer {
+    border-top: 6px solid #FFC91F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #202443;
+    height: 30vw;
+    width: 90vw;
+    padding: 20px;
+    line-height: 1.4;
+    color: white;
+    font-family: 'EB Garamond', serif;
+}
+
+
+footer a {
+    color: white;
+}
+
+.flexfoot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_3 img {
+    width: 50px;
+    transition: all 0.5s ease;
+}
+
+#footer_3 img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+
 /**MEDIA QUERIES**/
-
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
     header {
+        position: sticky;
+        background-color: #ffffff;
+        height: 80px;
+    }
+
+    header li a {
+        padding: 0;
+        font-size: 1.8rem;
+
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+        margin-right: 55px;
+        padding-bottom: 0;
+
+    }
+
+    #menu {
+
+        top: 30%;
+        right: 20%;
+
+
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    /* header {
         position: sticky;
         background-color: #ffffff;
         height: 5vw;
@@ -463,7 +568,7 @@ img {
         right: 20%;
 
 
-    }
+    }*/
 
     /**SPLASH**/
 
@@ -492,12 +597,13 @@ img {
         padding: 1%;
         margin: 0;
         display: flex;
-        flex-basis: 550px;
+        flex-basis: 500px;
 
     }
 
     .projects img {
         width: 60%;
+        border: 5px solid black;
     }
 
     #web .projects {
@@ -514,6 +620,8 @@ img {
     .title {
         margin-top: 5%;
         width: 50%;
+        height: 15vw;
+        padding-top: 0;
     }
 
     .title2 {
@@ -524,7 +632,7 @@ img {
 
     #web .skills {
         width: 90vw;
-        height: 25vw;
+        height: 30vw;
     }
 
 
@@ -542,6 +650,26 @@ img {
         padding-top: 5%;
         padding-bottom: 5%;
 
+    }
+
+    .links {
+        background-color: antiquewhite;
+        width: 35vw;
+        height: 20vw;
+        opacity: 0.8;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2.4;
+        padding-top: 5%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    .links a {
+        color: black;
+        text-decoration: none;
     }
 
     /**ANIMATION**/
@@ -654,11 +782,15 @@ img {
         height: 15vw;
         margin: 5%;
         padding: 4%;
-        background-color: #BCC8BB;
+        background-color: #6d7e6b;
         margin-left: 18%;
         border-radius: 1vw;
 
 
+    }
+
+    .des {
+        padding-top: 15%;
     }
 
     .et img {
@@ -732,7 +864,25 @@ img {
 
     }
 
+    /**FOOTER**/
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        width: 97vw;
+    }
 
 
+    footer img {
+        padding-left: 10vw;
+    }
+
+    .flexfoot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20%;
+    }
 
 }
